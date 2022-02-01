@@ -1,0 +1,23 @@
+{
+    "name": "dom-testing-cypress",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "cypress:run:record": "cypress run --record",
+        "dev": "start-test 7078 cypress:open",
+        "start": "node server.js --port 7078",
+        "test:ci": "start-test 7078 cypress:run",
+        "test:ci:record": "start-test 7078 cypress:run:record"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "cypress": "^9.1.1",
+        "express": "^4.17.1",
+        "minimist": "^1.2.5",
+        "start-server-and-test": "^1.14.0"
+    }
+}
